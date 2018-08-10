@@ -9,12 +9,12 @@ development:
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - localhost:27017
+        - <%= ENV["MONGODB_URI"] %>
       options:
         # The name of the user for authentication.
-        user: root
+        user: <%= ENV["MONGODB_USER"] %>
         # The password of the user for authentication.
-        password: '12345789'
+        password: <%= ENV["MONGODB_PASSWORD"] %>
         # The user's database roles.
         roles:
           - 'dbOwner'

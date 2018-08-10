@@ -59,3 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "mongoid", "~> 7.0"
 
 gem "bson_ext", "~> 1.5"
+
+gem 'rails_admin', '~> 1.3'
+
+gem "kaminari-mongoid", "~> 1.0"
